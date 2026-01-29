@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* default sty */
 * {
 	margin: 0;
 	padding: 0;
@@ -11,6 +12,7 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 	display: block;
 }
 
@@ -80,9 +82,12 @@ header {
 }
 
 .top-heading {
-	width: 50vw;
-	text-align: center !important;
-	margin: 0 80px;
+	width: 100%;
+}
+
+.top-heading h3 {
+	width: 100%;
+	text-align: center;
 	line-height: 120%;
 	font-size: 42px;
 	font-weight: 700;
@@ -119,50 +124,6 @@ header {
 
 .info-banner .warning {
 	display: none;
-}
-
-.banner-img {
-	display: flex;
-	width: 100%;
-	gap: 24px;
-	align-items: center;
-}
-
-.banner-left img {
-	border-radius: 15px;
-}
-
-.banner-right {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-.quote-icon {
-	width: 28px;
-	height: auto;
-}
-
-.banner-desc {
-	font-size: 24px;
-	line-height: 1.6;
-	font-style: italic;
-	margin: 0;
-}
-
-.user-desc {
-	margin: 0;
-	padding: 0;
-}
-
-.user-name {
-	margin: 0;
-	font-size: 18px;
-	font-weight: bold;
-	display: flex;
-	line-height: 22px;
-	align-items: center;
-	gap: 8px;
 }
 
 .banner {
@@ -245,21 +206,21 @@ header {
 }
 
 /* benefits */
-.section-2 {
+.formula-section {
 	overflow-x: hidden;
 	padding: 0;
-	background: rgba(255, 255, 255, 1);
+	background: rgba(252, 246, 240, 1);
 	text-align: center;
 }
 
-.section-2 h1 {
+.formula-section h1 {
 	font-size: 38px;
 	line-height: 48px;
 	margin: 0 auto 12px;
 	width: 100%;
 }
 
-.section-2 p {
+.formula-section p {
 	margin: 16px 0 32px;
 	text-align: left;
 	max-width: 100%;
@@ -268,7 +229,7 @@ header {
 	overflow-wrap: break-word;
 }
 
-.section-2-img {
+.formula-section-img {
 	width: 100%;
 	max-width: 100%;
 }
@@ -278,34 +239,6 @@ header {
 }
 
 /*  Testimonials */
-.testimonial-body {
-	background: rgba(166, 73, 151, 1);
-	margin: 0px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	padding: 48px 0px;
-}
-
-.testimonial-body h1 {
-	color: white;
-	font-size: 38px;
-	margin: 0 40px;
-	line-height: 48px;
-	width: 100%;
-	font-weight: bolder;
-}
-
-.testimonial-body .testimonial {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	gap: 20px;
-	padding: 10px 0;
-}
-
 /* FAq style */
 .faqss {
 	padding: 24px 15px;
@@ -361,10 +294,17 @@ header {
 	font-weight: 700;
 }
 
+.section-para {
+	font-size: 18;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
 /* OFFER */
 .offer {
 	background: rgba(214, 237, 252, 1);
-	padding: 30px;
+	padding: 0;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -374,7 +314,7 @@ header {
 	font-size: 36px;
 	font-weight: 800;
 	margin: 20px auto;
-	padding: 20px 60px;
+	padding: 0;
 }
 
 .red-inner {
@@ -407,19 +347,19 @@ header {
 }
 
 .pop-strip {
-	background: rgba(251, 110, 83, 1);
+	background: rgba(203, 48, 82, 1);
 	color: rgba(255, 255, 255, 1);
 	padding: 10px;
 	font-weight: 600;
-	border-radius: 12px 12px 0 0;
+	border-radius: 8px 8px 0 0;
 }
 
 .best-strip {
-	background: rgba(204, 45, 74, 1);
+	background: rgba(251, 111, 80, 1);
 	color: rgba(255, 255, 255, 1);
 	padding: 10px;
 	font-weight: 600;
-	border-radius: 12px 12px 0 0;
+	border-radius: 8px 8px 0 0;
 }
 
 h3 {
@@ -460,81 +400,6 @@ h3 {
 #cc-id-Fq1YfcUVhYMS {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.verified {
-	display: inline-flex;
-	align-items: center;
-	gap: 6px;
-	font-weight: 400;
-	color: rgba(33, 150, 83, 1);
-	line-height: 12px;
-	font-size: 18px;
-}
-
-.verified img {
-	width: 20px;
-	height: 20px;
-}
-
-.testimonial-card {
-	margin-top: 20px;
-	justify-content: start;
-	align-items: start;
-	text-align: start;
-	background-color: rgba(255, 255, 255, 1);
-	border-radius: 12px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	padding: 20px;
-	height: auto;
-	width: 100%;
-}
-
-.testimonial-header {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	margin-bottom: 10px;
-}
-
-.testimonial-header img {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	object-fit: cover;
-}
-
-.testimonial-header .name {
-	font-weight: bold;
-	margin: 0px;
-	font-size: 12px;
-}
-
-.testimonial-header .verified {
-	color: rgba(33, 150, 83, 1);
-	font-size: 12px;
-	display: flex;
-	gap: 2px;
-	align-items: center;
-}
-
-.stars {
-	align-items: start;
-	color: rgba(255, 180, 0, 1);
-	margin-bottom: 10px;
-	font-size: 1rem;
-}
-
-.testimonial-text p {
-	font-size: 12px;
-	line-height: 14px;
-	color: rgba(34, 31, 31, 1);
-	margin-top: 10px;
-}
-
-.testimonial-text b {
-	font-size: 16px;
-	margin: 10px 0px;
 }
 
 .add-btn {
@@ -618,7 +483,7 @@ h3 {
 
 .bottom-note {
 	font-size: 12px;
-	color: rgba(102, 102, 102, 1);
+	color: black;
 	text-decoration: underline;
 }
 
@@ -627,16 +492,9 @@ h3 {
 	margin-right: auto;
 }
 
-/* .product-card .content {
-		display: grid;
-		grid-template-columns: 110px 1fr;
-		column-gap: 12px;
-		padding: 14px;
-		align-items: start;
-	} */
 .faq-title {
 	text-align: center;
-	font-size: 28px;
+	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
@@ -648,7 +506,7 @@ h3 {
 }
 
 .faq-section {
-	width: 60%;
+	max-width: 910px;
 	margin: auto;
 }
 
@@ -656,24 +514,26 @@ h3 {
 	color: rgba(251, 22, 35, 1);
 }
 
-.section-heading {
+.formula-heading {
 	line-height: 120%;
 	font-size: 38px;
+	text-align: center;
 	font-weight: 700;
 }
 
-.section-2-list {
+.formula-section-list {
 	margin-top: 10px;
 	list-style: disc;
 	text-align: start;
 	width: 100%;
 }
 
-.section-2-list li {
+.formula-section-list li {
 	font-size: 18px;
 	font-weight: 400;
 	color: rgba(51, 51, 51, 1);
 	text-align: start;
+	margin-left: 28px;
 	line-height: 1.6;
 	margin-bottom: 12px;
 }
@@ -681,47 +541,8 @@ h3 {
 .benefits {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-	gap: 130px;
+	gap: 160px;
 	align-items: flex-start;
-}
-
-.benefit-items {
-	width: 100%;
-}
-
-.text-group {
-	display: flex;
-	flex-direction: column;
-	line-height: 1.1;
-}
-
-.benefit-items .text {
-	align-content: start;
-	min-width: 0;
-	margin-left: 10px;
-}
-
-.benefit-items .text h3 {
-	margin: 0;
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 1.25;
-}
-
-.benefit-items .text p {
-	margin: 0;
-	font-size: 14px;
-	line-height: 1.5;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 1);
-	max-width: 100%;
-	overflow-wrap: break-word;
-}
-
-.text {
-	font-size: 16px;
-	font-weight: 600;
-	margin-top: 20px;
 }
 
 .product-details-section {
@@ -748,7 +569,7 @@ h3 {
 	padding-top: 0;
 }
 
-.section-heading h1 {
+.formula-heading h1 {
 	font-size: 38px;
 	justify-content: center;
 	text-align: center;
@@ -756,10 +577,11 @@ h3 {
 	font-weight: bolder;
 }
 
-.section-heading p {
+.formula-heading p {
 	font-size: 18px;
 	line-height: 30px;
-	margin-top: 20px;
+	margin-top: 15px;
+	font-weight: 400;
 	justify-content: center;
 	text-align: center;
 }
@@ -781,6 +603,7 @@ h3 {
 .product-desc-list li {
 	font-size: 18px;
 	font-weight: 400;
+	text-align: start;
 	color: rgba(51, 51, 51, 1);
 	line-height: 1.6;
 	margin-bottom: 12px;
@@ -790,12 +613,12 @@ h3 {
 	font-weight: 700;
 }
 
-.product-decription {
+.ingredients-section {
 	flex: 1;
 	margin-left: 20px;
 }
 
-.product-decription h2 {
+.ingredients-section h2 {
 	font-size: 24px;
 	line-height: 120%;
 }
@@ -834,24 +657,29 @@ h3 {
 	text-align: left;
 }
 
+.ingredients-content {
+	display: none;
+	margin-top: 16px;
+}
+
+.ingredients.active .ingredients-content {
+	display: block;
+}
+
+.arrow-icon {
+	transition: transform 0.3s ease;
+}
+
+.ingredients.active .arrow-icon {
+	transform: rotate(180deg);
+}
+
 #cc-id-4W8qBkQ9FLKA {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.container {
-	max-width: 1100px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 48px 64px;
-}
-
-.divider {
-	border-top: 1px solid rgba(221, 221, 221, 1);
-	margin: 10px 0;
-}
-
-.product-details-section .item {
+.ingredients-section .ingredient-item {
 	display: flex;
 	align-items: start;
 	border: 0px;
@@ -863,32 +691,15 @@ h3 {
 	text-align: start;
 }
 
-.product-details-section .item h3 {
+.ingredients-section .ingredient-item h3 {
 	margin: 0;
 	font-size: 18px;
 }
 
-.product-details-section .item p {
+.ingredients-section .ingredient-item p {
 	margin: 5px 0 0;
-	color: rgba(85, 85, 85, 1);
+	color: black;
 	line-height: 140%;
-}
-
-.benefit-items .item {
-	display: grid;
-	grid-template-columns: 55px minmax(0, 1fr);
-	column-gap: 10px;
-	align-items: flex-start;
-	border: none;
-	border-radius: 0;
-	background: transparent;
-	border-bottom: 1px solid rgba(208, 208, 208, 1);
-	margin-left: 8px;
-}
-
-.item h3,
-.item p {
-	margin: 0;
 }
 
 .button-wrapper {
@@ -902,12 +713,12 @@ h3 {
 .purchase-btn {
 	background: rgba(188, 202, 254, 1);
 	border: none;
-	padding: 12px 14px;
+	padding: 12px 12px;
 	font-size: 14px;
 	color: rgba(108, 117, 125, 1);
 	font-weight: 500;
 	cursor: pointer;
-	border-radius: 12px 0 0 12px;
+	border-radius: 6px 0 0 6px;
 }
 
 .sale-btn {
@@ -918,7 +729,7 @@ h3 {
 	display: flex;
 	align-items: center;
 	gap: 6px;
-	border-radius: 12px;
+	border-radius: 6px;
 }
 
 .sale-tag {
@@ -939,13 +750,13 @@ h3 {
 	background: rgba(188, 202, 254, 1);
 	border: none;
 	stroke-width: 1px;
-	border-radius: 12px;
-	padding: 4.8px;
+	border-radius: 6px;
+	padding: 5px;
 }
 
 .subscribe-text {
 	font-size: 14px;
-	margin: 4px 4px;
+	margin: 5px;
 	line-height: 18px;
 	font-weight: bold;
 }
@@ -962,9 +773,9 @@ h3 {
 
 .faq-item {
 	background: rgba(255, 255, 255, 1);
-	border-radius: 10px;
+	border-radius: 16px;
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	padding: 20px;
 }
 
@@ -990,7 +801,7 @@ h3 {
 	transition: all 0.35s ease;
 	font-size: 17px;
 	line-height: 150%;
-	color: rgba(51, 51, 51, 1);
+	color: black;
 	margin-top: 10px;
 	padding: 0 22px;
 }
@@ -1005,11 +816,262 @@ h3 {
 	line-height: 1.6;
 }
 
+.faq-item span {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 150%;
+}
+
+.offer-text {
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: bold;
+	color: rgba(203, 48, 82, 1);
+}
+
+#cc-id-gn17YJrepB9k {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cc-id-g1muj1SaCg4c {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cc-id-t7iRR2r3ZWv6 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cc-id-jfXKW1DsiJB3 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cc-id-GFNCjZ9yTt60 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cc-id-U4XEKwBWYvFz {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.banner-img {
+	display: flex;
+	width: 100%;
+	gap: 24px;
+	justify-content: start;
+}
+
+.banner-left img {
+	border-radius: 15px;
+}
+
+.banner-right {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.quote-icon {
+	width: 28px;
+	height: auto;
+}
+
+.banner-desc {
+	font-size: 24px;
+	line-height: 1.6;
+	font-style: italic;
+	margin: 0;
+}
+
+.user-desc {
+	margin: 0;
+	padding: 0;
+}
+
+.user-name {
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	line-height: 22px;
+	align-items: center;
+	gap: 8px;
+}
+
+.benefit-items {
+	width: 100%;
+}
+
+.text-group {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.1;
+}
+
+.benefit-items .text {
+	align-content: start;
+	min-width: 0;
+	gap: 16px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+.benefit-items .text h3 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 120%;
+}
+
+.benefit-items .text p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 140%;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1);
+	max-width: 100%;
+	overflow-wrap: break-word;
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.benefit-items .item {
+	display: grid;
+	grid-template-columns: 55px minmax(0, 1fr);
+	column-gap: 10px;
+	align-items: flex-start;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	border-bottom: 1px solid rgba(208, 208, 208, 1);
+	margin-left: 8px;
+}
+
+.item h3,
+.item p {
+	margin: 0;
+}
+
+.testimonial-body {
+	background: rgba(166, 73, 151, 1);
+	margin: 0px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.testimonial-body h1 {
+	color: white;
+	font-size: 38px;
+	margin: 0 auto;
+	line-height: 48px;
+	width: 100%;
+	font-weight: bolder;
+}
+
+.testimonial-body .testimonial {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 20px;
+	padding: 10px 0;
+}
+
+.testimonial-card {
+	margin-top: 20px;
+	justify-content: start;
+	align-items: start;
+	text-align: start;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	height: auto;
+	width: 100%;
+}
+
+.testimonial-header {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+.testimonial-header img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.testimonial-header .name {
+	font-weight: bold;
+	margin: 0px;
+	font-size: 12px;
+}
+
+.stars {
+	align-items: start;
+	color: rgba(255, 180, 0, 1);
+	margin-bottom: 10px;
+	font-size: 1rem;
+}
+
+.testimonial-text p {
+	font-size: 12px;
+	line-height: 14px;
+	color: rgba(34, 31, 31, 1);
+	margin-top: 10px;
+}
+
+.testimonial-text b {
+	font-size: 16px;
+	margin: 10px 0px;
+}
+
+.container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 48px 64px;
+}
+
+.divider {
+	border-top: 1px solid rgba(221, 221, 221, 1);
+	margin: 10px 0;
+}
+
+.testimonial-header .verified {
+	color: rgba(33, 150, 83, 1);
+	font-size: 12px;
+	display: flex;
+	gap: 2px;
+	align-items: center;
+}
+
 .icon {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 150%;
 	width: 10px;
 }
 
-.product-details-section .item .icon {
+.ingredients-section .ingredient-item .icon {
 	width: 50px;
 	height: 50px;
 	margin-right: 16px;
@@ -1023,21 +1085,16 @@ h3 {
 	margin-left: 14px;
 }
 
-.testimonial-header .verified .icon {
-	color: rgba(44, 174, 111, 1);
-	height: 14px;
-	width: 14px;
-}
-
 .faq-question .icon::before {
 	content: '+';
 	align-items: flex-start;
 	text-align: start;
 	justify-content: start;
-	font-size: 22px;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 150%;
 	color: rgba(245, 127, 193, 1);
 	align-content: start;
-	font-weight: bold;
 	transition: 0.2s ease;
 }
 
@@ -1046,13 +1103,14 @@ h3 {
 	align-items: flex-start;
 	align-content: start;
 	align-self: start;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 150%;
 }
 
-.offer-text {
-	margin-top: 0;
-	font-size: 22px;
-	font-weight: bold;
-	color: rgba(203, 48, 82, 1);
+.testimonial-header .verified .icon {
+	height: 14px;
+	width: 14px;
 }
 
 @media (max-width: 780px) {
@@ -1076,29 +1134,30 @@ h3 {
 		display: none;
 	}
 	/* benefits */
-	.section-2 {
+	.formula-section {
 		overflow-x: hidden;
 		padding: 0;
-		background: rgba(255, 255, 255, 1);
+		background: rgba(252, 246, 240, 1);
 		text-align: center;
 	}
-	.section-2 h1 {
+	.formula-section h1 {
 		font-size: 24px;
 		line-height: 32px;
 		width: 100%;
+		text-align: start;
 	}
-	.section-2-list {
+	.formula-section-list {
 		list-style: disc;
 		width: 100%;
 	}
-	.section-2-list li {
+	.formula-section-list li {
 		font-size: 17px;
 		font-weight: 400;
 		text-align: center;
 		line-height: 25px;
 		margin-bottom: 12px;
 	}
-	.section-2 p {
+	.formula-section p {
 		font-size: 18px;
 		margin: 0;
 		padding: 0;
@@ -1120,13 +1179,11 @@ h3 {
 	.hero-section {
 		padding: 0 auto;
 	}
-	.section-2-img {
+	.formula-section-img {
 		order: -1;
 	}
 	.product-title h1 {
 		padding: 0 auto;
-		/* padding-top: 32px; */
-		/* padding-top: 32px; */
 	}
 	.benefit-items .item {
 		grid-template-columns: 40px 1fr;
@@ -1143,7 +1200,7 @@ h3 {
 	.banner-left {
 		margin: 0;
 		padding: 0;
-		width: 360px;
+		width: 100%;
 	}
 	.product-details-section {
 		display: flex;
@@ -1151,14 +1208,12 @@ h3 {
 		flex-direction: column;
 	}
 	.product-image-section,
-	.product-decription {
+	.ingredients-section {
 		width: 100%;
-		margin: 0;
+		padding: 0;
+		margin: 0 auto;
 	}
-	.container {
-		padding: 0 16px;
-	}
-	.product-details-section .item {
+	.ingredients-section .ingredient-item {
 		width: 100%;
 	}
 }
@@ -1169,21 +1224,22 @@ h3 {
 		font-weight: bold;
 		text-align: start;
 	}
-	.section-heading {
+	.formula-heading {
 		line-height: 32px;
 		padding: 0;
 		margin: 0;
 		font-size: 24px;
 		font-weight: 700;
 	}
-	.product-details-section .item {
+	.ingredients-section .ingredient-item {
 		display: flex;
 		align-items: start;
 		gap: 15px;
-		padding: 0;
+		padding: 15px 0;
 		margin: 0;
+		width: 100%;
 	}
-	.section-2 {
+	.formula-section {
 		padding: 0;
 		margin: 0;
 		font-size: 24px;
@@ -1247,7 +1303,10 @@ h3 {
 		text-align: start;
 	}
 	.offer {
-		padding: 16px;
+		padding: 0;
+	}
+	.offer-text {
+		font-size: 24px;
 	}
 	.features-bar {
 		display: flex;
@@ -1264,10 +1323,9 @@ h3 {
 	.offer h2 {
 		font-size: 20px;
 		width: 100%;
-		padding: 0px 0px;
-	}
-	.offer-text {
-		font-size: 14px;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 16px;
 	}
 	.purchase-btn,
 	.button-wrapper,
@@ -1275,28 +1333,22 @@ h3 {
 		width: 100%;
 	}
 	.product-card {
-		margin: 12px auto;
-		border-radius: 12px;
+		margin: 0;
+		border-radius: 8px;
 	}
 	.product-card .content {
 		display: grid;
-		grid-template-columns: 110px 1fr;
-		column-gap: 12px;
-		padding: 14px;
-		align-items: start;
-	}
-	.content {
-		display: grid;
-		grid-template-columns: 110px 1fr;
+		grid-template-columns: 160px 1fr;
 		column-gap: 12px;
 		padding: 14px;
 		align-items: start;
 	}
 	.pack-image {
-		max-width: 120px;
+		max-width: 170px;
 		grid-row: span 6;
 		grid-column: 1;
 		width: 100%;
+		align-items: center;
 		margin: 0;
 	}
 	.text {
@@ -1347,18 +1399,23 @@ h3 {
 	.product-card .content {
 		display: grid;
 		grid-template-columns: 180px 1fr;
-		column-gap: 12px;
+		column-gap: 10px;
 		align-items: start;
 		padding: 0;
 		margin-right: 10px;
 	}
-	/* .product-card .content {
-		display: grid;
-		grid-template-columns: 110px 1fr;
-		column-gap: 12px;
-		padding: 14px;
-		align-items: start;
-	} */
+	.content .text {
+		text-align: end;
+		margin-top: 10px;
+		align-self: flex-start;
+	}
+	.text h3 {
+		margin: 0;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: start;
+		line-height: 120%;
+	}
 	.dont-want {
 		text-decoration: underline;
 	}
@@ -1393,10 +1450,6 @@ h3 {
 		flex-direction: column;
 		gap: 8px;
 	}
-	.content .text {
-		align-self: flex-end;
-		text-align: end;
-	}
 	.text,
 	.text1 {
 		text-align: left;
@@ -1423,7 +1476,6 @@ h3 {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		/* margin-bottom: 16px; */
 	}
 	.right ul li {
 		font-size: 12px;
@@ -1460,6 +1512,12 @@ h3 {
 		line-height: 26px;
 	}
 	.top-heading {
+		margin: 0;
+		line-height: 120%;
+		font-size: 24px;
+		width: 100%;
+	}
+	.top-heading h3 {
 		margin: 0;
 		line-height: 120%;
 		font-size: 24px;
@@ -1506,7 +1564,7 @@ h3 {
 	}
 	.product-image-section {
 		margin: 0;
-		width: 100%;
+		width: 100%; margin: 20px 0;
 		text-align: center;
 	}
 	.product-image-section img {
@@ -1520,91 +1578,49 @@ h3 {
 		font-size: 17px;
 		text-align: left;
 	}
-	.product-decription {
+	.ingredients-section {
 		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
-	.product-decription h2 {
+	.ingredients-section h2 {
 		text-align: left;
 		font-size: 24px;
 	}
 	.desc {
 		font-size: 17px;
 	}
-	.product-decription .item {
-		margin: 0;
-		padding: 16px 15px;
-		width: 100vw;
-	}
-	.product-decription .item .icon {
-		height: 50px;
-		width: 50px;
-	}
+
 	.ingredients {
 		margin-top: 20px;
 		padding: 0px;
 	}
-	.product-decription .icon::before {
+	.ingredients-section .icon::before {
 		content: '';
 	}
-	/* Section */
-	/* .testimonial-body {
-		padding: 32px 15px;
-	} */
-	.testimonial-body {
-		padding: 0;
-	}
+
 	.testimonial-body h1 {
 		font-size: 26px;
 		font-weight: bold;
 		margin: 0 auto;
-		line-height: 1.3;
+		line-height: 32px;
 		text-align: center;
+		margin-bottom: 24px;
 		padding: auto;
 	}
-	.testimonial-body .testimonial {
-		flex-direction: column;
-		margin: 0px;
-		padding: 0px 0px;
-		gap: 16px;
-	}
-	.testimonial-card {
-		max-width: 100%;
-		width: 100%;
-		height: auto;
-		margin: 0;
-		padding: 16px;
-	}
-	.testimonial-header .name {
-		font-size: 13px;
-	}
-	.testimonial-header .verified {
-		font-size: 11px;
-	}
-	.stars img {
-		width: 90px;
-	}
-	.testimonial-text b {
-		font-size: 15px;
-	}
 	.testimonial-text p {
-		font-size: 13px;
-		line-height: 1.5;
+		font-size: 14px;
+		line-height: 140%;
 	}
+
 	.add-btn img {
 		width: 14px;
 		height: 14px;
 	}
-	* {
-		box-sizing: border-box;
-	}
-	body {
-		overflow-x: hidden;
-	}
+
 	/* faqss mob */
 	.faqss {
-		padding: 24px 15px;
+		padding: 20px;
 	}
 	.faq-item {
 		background: white;
@@ -1639,14 +1655,31 @@ h3 {
 		padding: 20px;
 		gap: 12px;
 	}
+
+	.faq-question .icon::before {
+		content: '+';
+
+		font-size: 24px;
+	}
+
+	.faq-item input:checked + .faq-question .icon::before {
+		content: '-';
+
+		font-size: 24px;
+	}
+
 	.faq-title {
-		font-size: 32px;
+		font-size: 24px;
 		font-weight: 700;
 		height: 40px;
 	}
 	.faq-answer {
 		align-items: flex-start;
 		font-size: 14px;
+	}
+	.faq-item span {
+		font-size: 24px;
+		font-weight: 500;
 	}
 	.pop-strip,
 	.best-strip {
@@ -1656,10 +1689,7 @@ h3 {
 	.notes {
 		margin: 6px 0 0;
 	}
-	.faq-question .icon {
-		margin-top: 2px;
-		flex-shrink: 0;
-	}
+
 	.footer-top {
 		padding: 24px 16px;
 	}
@@ -1677,21 +1707,20 @@ h3 {
 		text-align: center;
 		align-items: center;
 	}
-	.section-2 h1 {
+	.formula-section h1 {
 		font-size: 24px;
 		font-weight: 700;
 		margin: 0px;
 		line-height: 32px;
 	}
-	.section-2 p {
+	.formula-section p {
 		text-align: start;
 		font-size: 14px;
 	}
-	.section-2-list {
-		margin-top: 10px;
-		margin-left: 10px;
+	.formula-section-list {
+		margin: 10px;
 	}
-	.section-2-list li {
+	.formula-section-list li {
 		font-size: 17px;
 		text-align: start;
 	}
@@ -1704,7 +1733,6 @@ h3 {
 	}
 	.benefit-img {
 		width: 100%;
-		max-width: 320px;
 		margin: 0 auto;
 	}
 	.benefit-items {
@@ -1734,26 +1762,67 @@ h3 {
 	}
 	.item h3 {
 		font-size: 20px;
-		line-height: 1.3;
+		margin: 0;
+
+		line-height: 120%;
 	}
 	.item p {
 		font-size: 14px;
+		margin: 0;
+
 		line-height: 140%;
 	}
-	.item h3,
-	.item p {
-		margin: 0;
-	}
+
 	.button-wrapper {
+		padding: 0;
 		margin-top: 0px;
 	}
 	.margin {
 		margin-bottom: 12px;
 	}
-}
+	.ingredients-section .ingredient-item .icon {
+		height: 50px;
+		width: 50px;
+	}
 
-@media (max-width: 480px) {
-	.offer-text {
-		font-size: 14px;
+	.testimonial-body {
+		padding: 0;
+	}
+
+	.testimonial-body .testimonial {
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		gap: 16px;
+	}
+	.ingredients-section .ingredient-item .icon {
+		height: 50px;
+		width: 50px;
+	}
+	.testimonial-header .name {
+		font-size: 13px;
+	}
+	.testimonial-header .name {
+		font-size: 13px;
+	}
+	.stars img {
+		width: 90px;
+	}
+	.testimonial-text b {
+		font-size: 16px;
+	}
+	.faq-question .icon {
+		margin-top: 2px;
+		flex-shrink: 0;
+	}
+
+	.icon {
+		flex-shrink: 0;
+		margin-top: 0px;
+	}
+	.icon img {
+		margin: 0;
+		align-items: start;
+		justify-content: start;
 	}
 }
